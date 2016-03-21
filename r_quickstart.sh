@@ -14,7 +14,7 @@ sudo apt-get -yy install libxml2-dev libzmq3-dev libpq-dev
 sudo apt-get -yy install ubuntu-dev-tools libapparmor1 psmisc 
 sudo apt-get -yy install -y gdebi-core
 sudo apt-get -yy install nginx
-sudo apt-get -yy yinstall apache2-utils
+sudo apt-get -yy install apache2-utils
 
 echo ""
 echo ""
