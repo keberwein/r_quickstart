@@ -21,10 +21,12 @@ sudo yum install npm -y
 
 sudo yum install R-core R-devel -y
 
-sudo su - -c "R -e \"install.packages(c('shiny', 'rmarkdown', 'devtools', 'RJDBC', 'dplyr', 'tidyr', 'knitr', 'plotly', 'devtools', 'RPostgreSQL', 'lubridate', 'DBI', 'reshape2', 'DT', 'htmlwidgets'), repos='http://cran.rstudio.com/')\""
-
 # Install Postgres. This is so the RPostgreSQL package will work properly. The database needs not be configured.
-sudo yum install postgresql postgresql-contrib -y
+sudo yum install postgresql-devel -y
+# Plotly needs libcurl
+sudo yum install libcurl-devel -y
+
+sudo su - -c "R -e \"install.packages(c('shiny', 'rmarkdown', 'devtools', 'RJDBC', 'dplyr', 'plotly', 'RPostgreSQL', 'lubridate', 'DT'), repos='http://cran.rstudio.com/')\""
 
 # Download Shiny Server
 wget https://download3.rstudio.org/centos5.9/x86_64/shiny-server-1.5.1.834-rh5-x86_64.rpm
