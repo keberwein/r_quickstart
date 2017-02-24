@@ -15,7 +15,7 @@ sudo apt-get -yy install ubuntu-dev-tools libapparmor1 psmisc
 sudo apt-get -yy install -y gdebi-core
 echo ""
 echo ""
-echo "Installing R and Rstudio-Server"
+echo "Installing R
 echo "###################################################"
 
 echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" | sudo tee -a /etc/apt/sources.list
