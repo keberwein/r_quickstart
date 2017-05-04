@@ -1,5 +1,5 @@
 
-worker_processes  100;
+worker_processes  2; #Number of cores to use
 
 events {
     worker_connections  1024;
