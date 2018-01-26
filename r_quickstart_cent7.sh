@@ -28,7 +28,7 @@ sudo yum install postgresql-devel -y
 # Plotly needs libcurl
 sudo yum install libcurl-devel -y
 
-sudo su - -c "R -e \"install.packages(c('shiny', 'rmarkdown', 'devtools', 'RJDBC', 'dplyr', 'plotly', 'RPostgreSQL', 'lubridate', 'DT'), repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages(c('shiny', 'rmarkdown', 'devtools', 'RJDBC', 'dplyr', 'plotly', 'RPostgreSQL', 'lubridate'), repos='http://cran.rstudio.com/')\""
 
 # Download Shiny Server
 wget https://download3.rstudio.org/centos5.9/x86_64/shiny-server-1.5.3.838-rh5-x86_64.rpm
